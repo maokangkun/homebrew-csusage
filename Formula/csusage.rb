@@ -1,26 +1,26 @@
 class Csusage < Formula
-  desc "Token usage reports for Claude Science"
-  homepage "https://github.com/maokangkun/csusage"
-  version "0.1.1"
+  desc "Coding agent CLI usage reports (ccusage fork with Claude Science support)"
+  homepage "https://github.com/maokangkun/ccusage"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/csusage/releases/download/v0.1.1/csusage-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "d6d67808a0f6db07b463a6c79763503e6724928c8a393d310736d5418d3ab10a"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.2.0/csusage-csusage-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "20569b62ecf02a73e3b50439cea09db50348ed62b150a4951e8b53f3a3e90cd4"
     else
-      url "https://github.com/maokangkun/csusage/releases/download/v0.1.1/csusage-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "6401aec0df33b2c3cf713aed8b0a4559397ab44a62dc3fc23cd2ded6acb74765"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.2.0/csusage-csusage-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3bd65d8bc1b4dd105a89930648350c3f1a5740e27e1f1e9c1b5002529ede61ac"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/csusage/releases/download/v0.1.1/csusage-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "961efa3eca6a879d907d92a47815bc9ff1406c6e89b215a21a436f67bd0f6b59"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.2.0/csusage-csusage-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0d3ec4d7d1c95ef530714ab0f2d6df4c8ab44b22f63e1e6594bce1a3339f953a"
     elsif Hardware::CPU.arm?
-      url "https://github.com/maokangkun/csusage/releases/download/v0.1.1/csusage-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1b78c3edf042c2d2f2f1f783d9c36c0a73f0ae987f93e9557ecb766c656e1815"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.2.0/csusage-csusage-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "901b4646b139d5f6249b94d0d6bdf95dbc6c8a4ea2d41c61581c83ff18e99f4a"
     end
   end
 
@@ -29,6 +29,6 @@ class Csusage < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/csusage --version")
+    assert_match "ccusage", shell_output("#{bin}/csusage --version")
   end
 end
