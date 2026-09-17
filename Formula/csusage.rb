@@ -1,26 +1,26 @@
 class Csusage < Formula
   desc "Coding agent CLI usage reports (ccusage fork with Claude Science support)"
   homepage "https://github.com/maokangkun/ccusage"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.3.0-x86_64-apple-darwin.tar.gz"
-    sha256 "868568cf5428500182850454482de2e4fab092ad5248d3011ef80fd7c419af41"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.4.0-x86_64-apple-darwin.tar.gz"
+    sha256 "c17b6c73954c85a3f68ce38648c6bbe8246efdc7b47d7463a22b84aabc250bca"
     else
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.3.0-aarch64-apple-darwin.tar.gz"
-    sha256 "790bed8aef7049852d46446c19f56ac7ff0d1537defb463063e86b5e6fe9077d"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.4.0-aarch64-apple-darwin.tar.gz"
+    sha256 "97ba25142567430b2e2fd05b96f65b2df518cad9054119a5d96d8ad0217ca6f0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "51098f261bac05f5c83aafc3ccbcc764153b5cba4cfcc656f5bebaa50c50190e"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "73681ad3e505319e56551976d847a8a38598c426b1142db2983051a69e4feab9"
     elsif Hardware::CPU.arm?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "411810c8525f915292dc39faad4375dbd92f58b4f8c5c61ebd8206ab0d5a5d2c"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.3.0/csusage-csusage-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "ffbb0e1ff0ca8b831477fef9440cbb3f19ad06f3379b6bce9e71c4db671e317e"
     end
   end
 
