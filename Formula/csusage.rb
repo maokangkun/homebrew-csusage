@@ -1,26 +1,26 @@
 class Csusage < Formula
   desc "Coding agent CLI usage reports (ccusage fork with Claude Science support)"
   homepage "https://github.com/maokangkun/ccusage"
-  version "0.4.19"
+  version "0.4.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.19/csusage-csusage-v0.4.19-x86_64-apple-darwin.tar.gz"
-    sha256 "ede74c2652ce27615cbdb968ad42549ed57ad9f0fa7007e287aa777ac922b61c"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.20/csusage-csusage-v0.4.20-x86_64-apple-darwin.tar.gz"
+    sha256 "eda38fb9e577dabe1ff504572b13fc0f0b01724cb574640663b9d20038b577d9"
     else
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.19/csusage-csusage-v0.4.19-aarch64-apple-darwin.tar.gz"
-    sha256 "20e83c5a1cbc23dab8bf5f09cc746e0fa8c0de9b22275f53815b77130cb19a10"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.20/csusage-csusage-v0.4.20-aarch64-apple-darwin.tar.gz"
+    sha256 "cb0124a362e6f980e277ca8e154b85ee71a21c5a26684685684c7b250e4783f4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.19/csusage-csusage-v0.4.19-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ceff2db7d4c009a35040a09752fcbd5826e41717db8d98daf23f0a410c05d368"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.20/csusage-csusage-v0.4.20-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "57066dc1503b70cd85577d9e4463940fe8a4809d165ed4383dafb4b1fd9823ea"
     elsif Hardware::CPU.arm?
-      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.19/csusage-csusage-v0.4.19-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "e8e2c6f551f405a4674b7085d94dd012b188dc99ba7c988cce94de5b68e6d4f7"
+      url "https://github.com/maokangkun/ccusage/releases/download/csusage-v0.4.20/csusage-csusage-v0.4.20-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "91583d0268a4e14efea099de49ad16116502ec2c1cf923c6986dde4b5512c0c9"
     end
   end
 
